@@ -5,39 +5,226 @@ output:
     toc: true  
     toc_float: true  
 ---
-# __Rail trail__
-## Metadata
-- __Course name and code:__ Geo Tools
-- __Application of the products:__
-- __Potential users and their requirements:__ 
-- __Motivation for choice of visualisation type:__ 
-- __Dataset(s) used:__ 
-- __Processing method(s):__ 
-- __Tools used for implementation:__ 
-- __Reflection on final result:__ 
+# __Light Rail__
 
+![ ](./LigthRailCost.jpg)
+
+## Metadata
+
+__Course name__ 
+
+Geo-information Tools
+
+
+__Course code__ 
+
+GRS-20806
+
+
+__Application of the products__ 
+
+Compute route for a Light Rail and it's costs.
+
+
+__Potential users__ 
+
+ + Companies
+ 
+ + Local governments
+ 
+
+__Potential users' requirements__ 
+
+Numbers and maps easy to understand.
+
+
+__Motivation for choice of visualisation type__ 
+
+Thematic map of the spatial cost of a Rail. It is easy to read, and can add written text providing extra information, like the total costs.
+
+
+__Dataset(s) used__  
+
+ + DEM
+ 
+ + Buildings
+ 
+ + Infraestructure
+ 
+ + Water
+ 
+ + Census
+ 
+ + Landcover
+ 
+
+__Processing method(s)__
+
+ + Join and relate tables
+ 
+ + Vector and grid buffers
+ 
+ + Generalization of geometry
+ 
+ + Create suitability raster
+ 
+ + Create cospath and corridors
+ 
+ + Design in ArcGIS
+ 
+ + Compute costs
+ 
+
+__Tools used for implementation__ 
+
+  + ArcGIS
+  
+  + Model Builder 
+  
+
+__Reflection on final result__
+
+The map is quite clear, showing areas with higher cost thicker that tracks with lower costs, and making the Ligth rail stand over a transparent background, which adds information but does not take over. with areas more expensive being thickest. Nevertheless adding labels for Most Suitable and Less suitable next to the suitabiliy lengend would make it better.3 scenarios were plotted due to uncertanies about the real cost, which price is significantly different, but better information about cost would solve the problem. The criteria used to select suitability areas is subjective, and prefered areas could differ applying different criteria. This allows to change suitability according to the user's preferences.
+
+----
 
 # __Near-Real-Time temperature interpolation__
 
-## Metadata
-- __Course name and code:__ Advanced GIS for Earth and Environment
-- __Application of the products:__
-- __Potential users and their requirements:__ Anyone interested in current temperature at any country is a potential user. Such a user wants to quickly understand the temperature from the map.
-- __Motivation for choice of visualisation type:__ Colours chosen are related to temperature (blue=cold, and red=warm)
-- __Dataset(s) used:__ Open Weather near real time data
-- __Processing method(s):__ Read temperature data from API, select data for chosen location, interpolate,.....
-- __Tools used for implementation:__ R(owm,gstat,shiny), shinny app
-- __Reflection on final result:__ The app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: show temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
+__Shiny app:__
 
 https://tubau001.shinyapps.io/real-time-temperature
 
+
+
+## Metadata
+
+__Course name__ 
+
+Advanced GIS for Earth and Environment
+
+
+__Course code__ 
+
+
+__Application of the products__
+
+Compare interpolation methods and visualize current temperature at country level
+
+
+__Potential users__
+
+Anyone interested in current temperature at any country 
+
+
+__Potential users' requirements__ 
+
+Quickly understand the temperature from the map.
+
+
+__Visualisation type__
+
+2D reference map allows to show temperature data, colours chosen are related to temperature (blue=cold, red=warm).
+
+
+__Dataset(s)__ 
+
+Open Weather near real time data
+
+
+__Processing method(s)__ 
+
+  + Read temperature data from API
+  
+  + Select data for chosen location
+  
+  + interpolate
+  
+  + update data
+  
+  
+__Tools used__ 
+  
+  + R: owm, gstat
+  
+  + shinny app
+  
+  + leaflet
+  
+  
+__Reflection on final result__ 
+
+The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
+
+----
+
 # __Flooding Modelling__
 ## Metadata
-- __Course name and code:__ Modelling and geo statistics
-- __Application of the products:__
-- __Potential users and their requirements:__ 
-- __Motivation for choice of visualisation type:__ 
-- __Dataset(s) used:__ 
-- __Processing method(s):__ 
-- __Tools used for implementation:__ 
-- __Reflection on final result:__ 
+- __Course name :__ Modelling and geo statistics
+- __Course code:__
+- __Application of the products:__ Flood management
+- __Potential users:__ Policy makers
+- __Potential users' requirements:__ Easy to interprete
+- __Visualisation type:__ 
+- __Dataset(s):__ Height point data, influx distribution data
+- __Processing method(s):__ Kriging, MonteCarlo
+- __Tools used:__ NetLogo, Rstudio
+- __Reflection on result:__ Result shows clearly areas safe and hazarduous, with distinct colous, but no information on the ucertanty. Such information is important for the quality of the model, but, if uncertanty is not ver big, the plot distinguishing safe and hazarduous areas can be used quite safely by policy makers without taking risks.
+
+----
+
+# __Ground Control Points on DEM from Photogrammetry__
+## Metadata
+
+__Course name__ 
+
+Advanced Earth Observation
+
+
+__Course code__
+
+
+__Application of the products__ 
+
+Gain understanding on Photogrammetry
+
+
+__Potential users__ 
+
+  + Photogrammetry users
+  
+  + Remote sensing scientists
+
+
+__Potential users' requirements:__ 
+
+Result easy to interpret
+
+
+__Visualisation type__ 
+
+
+__Dataset(s):__ 
+
+  + Photographies from UAV
+  
+  + Ground Control Point coordinates
+
+
+__Processing method(s)__ 
+  
+  + Structure-from-motion photogrammetry: Point Cloud, Mesh, Texture, Export DEM
+
+  + Minus function ArcGIS to compute difference
+  
+  
+__Tools used__ 
+
+  + Agisoft Photoscan
+  
+  + ArcGIS
+
+
+__Reflection on result__ 
+
+Result can be read thanks to the colour selection: Positive, negative and areas with differences close to 0 have different colours, and it can be interpreted easily thanks to the legend.
+

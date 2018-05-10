@@ -299,37 +299,93 @@ div.tocify {
 </div>
 
 
-<div id="rail-trail" class="section level1">
-<h1><strong>Rail trail</strong></h1>
+<div id="light-rail" class="section level1">
+<h1><strong>Light Rail</strong></h1>
+<div class="figure">
+<img src="./LigthRailCost.jpg" />
+
+</div>
 <div id="metadata" class="section level2">
 <h2>Metadata</h2>
+<p><strong>Course name</strong></p>
+<p>Geo-information Tools</p>
+<p><strong>Course code</strong></p>
+<p>GRS-20806</p>
+<p><strong>Application of the products</strong></p>
+<p>Compute route for a Light Rail and it’s costs.</p>
+<p><strong>Potential users</strong></p>
 <ul>
-<li><strong>Course name and code:</strong> Geo Tools</li>
-<li><strong>Application of the products:</strong></li>
-<li><strong>Potential users and their requirements:</strong></li>
-<li><strong>Motivation for choice of visualisation type:</strong></li>
-<li><strong>Dataset(s) used:</strong></li>
-<li><strong>Processing method(s):</strong></li>
-<li><strong>Tools used for implementation:</strong></li>
-<li><strong>Reflection on final result:</strong></li>
+<li><p>Companies</p></li>
+<li><p>Local governments</p></li>
 </ul>
+<p><strong>Potential users’ requirements</strong></p>
+<p>Numbers and maps easy to understand.</p>
+<p><strong>Motivation for choice of visualisation type</strong></p>
+<p>Thematic map of the spatial cost of a Rail. It is easy to read, and can add written text providing extra information, like the total costs.</p>
+<p><strong>Dataset(s) used</strong></p>
+<ul>
+<li><p>DEM</p></li>
+<li><p>Buildings</p></li>
+<li><p>Infraestructure</p></li>
+<li><p>Water</p></li>
+<li><p>Census</p></li>
+<li><p>Landcover</p></li>
+</ul>
+<p><strong>Processing method(s)</strong></p>
+<ul>
+<li><p>Join and relate tables</p></li>
+<li><p>Vector and grid buffers</p></li>
+<li><p>Generalization of geometry</p></li>
+<li><p>Create suitability raster</p></li>
+<li><p>Create cospath and corridors</p></li>
+<li><p>Design in ArcGIS</p></li>
+<li><p>Compute costs</p></li>
+</ul>
+<p><strong>Tools used for implementation</strong></p>
+<ul>
+<li><p>ArcGIS</p></li>
+<li><p>Model Builder</p></li>
+</ul>
+<p><strong>Reflection on final result</strong></p>
+<p>The map is quite clear, showing areas with higher cost thicker that tracks with lower costs, and making the Ligth rail stand over a transparent background, which adds information but does not take over. with areas more expensive being thickest. Nevertheless adding labels for Most Suitable and Less suitable next to the suitabiliy lengend would make it better.3 scenarios were plotted due to uncertanies about the real cost, which price is significantly different, but better information about cost would solve the problem. The criteria used to select suitability areas is subjective, and prefered areas could differ applying different criteria. This allows to change suitability according to the user’s preferences.</p>
+<hr />
 </div>
 </div>
 <div id="near-real-time-temperature-interpolation" class="section level1">
 <h1><strong>Near-Real-Time temperature interpolation</strong></h1>
+<p><strong>Shiny app:</strong></p>
+<p><a href="https://tubau001.shinyapps.io/real-time-temperature" class="uri">https://tubau001.shinyapps.io/real-time-temperature</a></p>
 <div id="metadata-1" class="section level2">
 <h2>Metadata</h2>
+<p><strong>Course name</strong></p>
+<p>Advanced GIS for Earth and Environment</p>
+<p><strong>Course code</strong></p>
+<p><strong>Application of the products</strong></p>
+<p>Compare interpolation methods and visualize current temperature at country level</p>
+<p><strong>Potential users</strong></p>
+<p>Anyone interested in current temperature at any country</p>
+<p><strong>Potential users’ requirements</strong></p>
+<p>Quickly understand the temperature from the map.</p>
+<p><strong>Visualisation type</strong></p>
+<p>2D reference map allows to show temperature data, colours chosen are related to temperature (blue=cold, red=warm).</p>
+<p><strong>Dataset(s)</strong></p>
+<p>Open Weather near real time data</p>
+<p><strong>Processing method(s)</strong></p>
 <ul>
-<li><strong>Course name and code:</strong> Advanced GIS for Earth and Environment</li>
-<li><strong>Application of the products:</strong></li>
-<li><strong>Potential users and their requirements:</strong> Anyone interested in current temperature at any country is a potential user. Such a user wants to quickly understand the temperature from the map.</li>
-<li><strong>Motivation for choice of visualisation type:</strong> Colours chosen are related to temperature (blue=cold, and red=warm)</li>
-<li><strong>Dataset(s) used:</strong> Open Weather near real time data</li>
-<li><strong>Processing method(s):</strong> Read temperature data from API, select data for chosen location, interpolate,…..</li>
-<li><strong>Tools used for implementation:</strong> R(owm,gstat,shiny), shinny app</li>
-<li><strong>Reflection on final result:</strong> The app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: show temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</li>
+<li><p>Read temperature data from API</p></li>
+<li><p>Select data for chosen location</p></li>
+<li><p>interpolate</p></li>
+<li><p>update data</p></li>
 </ul>
-<p><a href="https://tubau001.shinyapps.io/real-time-temperature" class="uri">https://tubau001.shinyapps.io/real-time-temperature</a></p>
+<p><strong>Tools used</strong></p>
+<ul>
+<li><p>R: owm, gstat</p></li>
+<li><p>shinny app</p></li>
+<li><p>leaflet</p></li>
+</ul>
+<p><strong>Reflection on final result</strong></p>
+<p>The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</p>
+<hr />
 </div>
 </div>
 <div id="flooding-modelling" class="section level1">
@@ -337,15 +393,54 @@ div.tocify {
 <div id="metadata-2" class="section level2">
 <h2>Metadata</h2>
 <ul>
-<li><strong>Course name and code:</strong> Modelling and geo statistics</li>
-<li><strong>Application of the products:</strong></li>
-<li><strong>Potential users and their requirements:</strong></li>
-<li><strong>Motivation for choice of visualisation type:</strong></li>
-<li><strong>Dataset(s) used:</strong></li>
-<li><strong>Processing method(s):</strong></li>
-<li><strong>Tools used for implementation:</strong></li>
-<li><strong>Reflection on final result:</strong></li>
+<li><strong>Course name :</strong> Modelling and geo statistics</li>
+<li><strong>Course code:</strong></li>
+<li><strong>Application of the products:</strong> Flood management</li>
+<li><strong>Potential users:</strong> Policy makers</li>
+<li><strong>Potential users’ requirements:</strong> Easy to interprete</li>
+<li><strong>Visualisation type:</strong></li>
+<li><strong>Dataset(s):</strong> Height point data, influx distribution data</li>
+<li><strong>Processing method(s):</strong> Kriging, MonteCarlo</li>
+<li><strong>Tools used:</strong> NetLogo, Rstudio</li>
+<li><strong>Reflection on result:</strong> Result shows clearly areas safe and hazarduous, with distinct colous, but no information on the ucertanty. Such information is important for the quality of the model, but, if uncertanty is not ver big, the plot distinguishing safe and hazarduous areas can be used quite safely by policy makers without taking risks.</li>
 </ul>
+<hr />
+</div>
+</div>
+<div id="ground-control-points-on-dem-from-photogrammetry" class="section level1">
+<h1><strong>Ground Control Points on DEM from Photogrammetry</strong></h1>
+<div id="metadata-3" class="section level2">
+<h2>Metadata</h2>
+<p><strong>Course name</strong></p>
+<p>Advanced Earth Observation</p>
+<p><strong>Course code</strong></p>
+<p><strong>Application of the products</strong></p>
+<p>Gain understanding on Photogrammetry</p>
+<p><strong>Potential users</strong></p>
+<ul>
+<li><p>Photogrammetry users</p></li>
+<li><p>Remote sensing scientists</p></li>
+</ul>
+<p><strong>Potential users’ requirements:</strong></p>
+<p>Result easy to interpret</p>
+<p><strong>Visualisation type</strong></p>
+<p><strong>Dataset(s):</strong></p>
+<ul>
+<li><p>Photographies from UAV</p></li>
+<li><p>Ground Control Point coordinates</p></li>
+</ul>
+<p><strong>Processing method(s)</strong></p>
+<ul>
+<li><p>Structure-from-motion photogrammetry: Point Cloud, Mesh, Texture, Export DEM</p></li>
+<li><p>Minus function ArcGIS to compute difference</p></li>
+</ul>
+<p><strong>Tools used</strong></p>
+<ul>
+<li><p>Agisoft Photoscan</p></li>
+<li><p>ArcGIS</p></li>
+</ul>
+<p><strong>Reflection on result</strong></p>
+<p>Result can be read thanks to the colour selection: Positive, negative and areas with differences close to 0 have different colours, and it can be interpreted easily thanks to the legend.</p>
 </div>
 </div>
 
