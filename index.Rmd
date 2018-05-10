@@ -5,17 +5,13 @@ output:
     toc_float: true  
 ---
 
-```{R, include = F}
-
-
-```
 # __Light Rail__
 
 <img src="images/LigthRailCost.jpg" width="650px">
 
 
 
-## Metadata
+## __Metadata__
 
 __Course name__ 
 
@@ -183,6 +179,8 @@ The shiny app is still very slow due to the large computation time of the interp
 
 # __Ground Control Points on DEM from Photogrammetry__
 ## __Metadata__
+
+<img src="images/DEMdif.png" width="650px">
 
 __Course name__ 
 
