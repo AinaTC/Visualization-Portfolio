@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -71,6 +71,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
 
@@ -98,6 +99,58 @@ button.code-folding-btn:focus {
 }
 </style>
 
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
 
 
 <div class="container-fluid main-container">
@@ -211,6 +264,32 @@ div.tocify {
 
 
 
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">GIS Portfolio</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Metadata</a>
+</li>
+<li>
+  <a href="about.html">About me</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
 <div class="fluid-row" id="header">
 
 
@@ -220,13 +299,28 @@ div.tocify {
 </div>
 
 
-<div id="near-real-time-temperature-interpolation" class="section level2">
-<h2><strong>Near-Real-Time temperature interpolation</strong></h2>
-</div>
-<div id="metadata" class="section level1">
-<h1>Metadata</h1>
+<div id="rail-trail" class="section level1">
+<h1><strong>Rail trail</strong></h1>
+<div id="metadata" class="section level2">
+<h2>Metadata</h2>
 <ul>
-<li><strong>Course name and code:</strong> Advanced GIS</li>
+<li><strong>Course name and code:</strong> Geo Tools</li>
+<li><strong>Application of the products:</strong></li>
+<li><strong>Potential users and their requirements:</strong></li>
+<li><strong>Motivation for choice of visualisation type:</strong></li>
+<li><strong>Dataset(s) used:</strong></li>
+<li><strong>Processing method(s):</strong></li>
+<li><strong>Tools used for implementation:</strong></li>
+<li><strong>Reflection on final result:</strong></li>
+</ul>
+</div>
+</div>
+<div id="near-real-time-temperature-interpolation" class="section level1">
+<h1><strong>Near-Real-Time temperature interpolation</strong></h1>
+<div id="metadata-1" class="section level2">
+<h2>Metadata</h2>
+<ul>
+<li><strong>Course name and code:</strong> Advanced GIS for Earth and Environment</li>
 <li><strong>Application of the products:</strong></li>
 <li><strong>Potential users and their requirements:</strong> Anyone interested in current temperature at any country is a potential user. Such a user wants to quickly understand the temperature from the map.</li>
 <li><strong>Motivation for choice of visualisation type:</strong> Colours chosen are related to temperature (blue=cold, and red=warm)</li>
@@ -236,6 +330,23 @@ div.tocify {
 <li><strong>Reflection on final result:</strong> The app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: show temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</li>
 </ul>
 <p><a href="https://tubau001.shinyapps.io/real-time-temperature" class="uri">https://tubau001.shinyapps.io/real-time-temperature</a></p>
+</div>
+</div>
+<div id="flooding-modelling" class="section level1">
+<h1><strong>Flooding Modelling</strong></h1>
+<div id="metadata-2" class="section level2">
+<h2>Metadata</h2>
+<ul>
+<li><strong>Course name and code:</strong> Modelling and geo statistics</li>
+<li><strong>Application of the products:</strong></li>
+<li><strong>Potential users and their requirements:</strong></li>
+<li><strong>Motivation for choice of visualisation type:</strong></li>
+<li><strong>Dataset(s) used:</strong></li>
+<li><strong>Processing method(s):</strong></li>
+<li><strong>Tools used for implementation:</strong></li>
+<li><strong>Reflection on final result:</strong></li>
+</ul>
+</div>
 </div>
 
 

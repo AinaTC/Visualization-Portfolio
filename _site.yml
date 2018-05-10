@@ -1,15 +1,13 @@
----
 name: "Portfolio"
 output_dir: "."
 navbar:
   title: "GIS Portfolio"
   left:
-    - text: "About me"
-      href: about.html
     - text: "Metadata"
       href: index.html
+    - text: "About me"
+      href: about.html
 output:
   html_document:
     theme: flatly
     css: style.css
----
