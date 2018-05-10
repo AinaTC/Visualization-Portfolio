@@ -122,7 +122,14 @@ $(document).ready(function () {
 </div>
 
 
-<p>Helo World!</p>
+<ul>
+<li><strong>Near-Real-Time temperature interpolation</strong></li>
+</ul>
+<div id="metadata" class="section level2">
+<h2>Metadata</h2>
+<p><em>Course name and code:</em> Advanced GIS <em>Application of the products:</em> <em>Potential users and their requirements:</em> Anyone interested in current temperature at any country is a potential user. Such a user wants to quickly understand the temperature from the map. <em>Motivation for choice of visualisation type:</em> Colours chosen are related to temperature (blue=cold, and red=warm) <em>Dataset(s) used:</em> Open Weather near real time data <em>Processing method(s):</em> Read temperature data from API, select data for chosen location, interpolate,….. <em>Tools used for implementation:</em> R(owm,gstat,shiny), shinny app <em>Reflection on final result:</em> The app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: show temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</p>
+<p><a href="https://tubau001.shinyapps.io/real-time-temperature" class="uri">https://tubau001.shinyapps.io/real-time-temperature</a></p>
+</div>
 
 
 
