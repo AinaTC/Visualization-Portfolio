@@ -4,8 +4,12 @@ output_dir: "."
 navbar:
   title: "GIS Portfolio"
   left:
-    - text: "Home"
-      href: index.html
-    - text: "Metadata"
+    - text: "About me"
       href: about.html
+    - text: "Metadata"
+      href: index.html
+output:
+  html_document:
+    theme: flatly
+    css: style.css
 ---

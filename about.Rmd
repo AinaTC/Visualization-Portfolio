@@ -2,4 +2,9 @@
 title: "About Me"
 ---
 
-Why I am awesome. 
+Name: Aina Tubau Comas
+- __Name:__ Aina Tubau Comas
+- __Ocupation:__ Geo-Information Sciences student at Wageningen University
+- __Background:__ Bachelor in environmental sciences at University of Barcelona
+- __Hobbies:__ Music, gardening, dancing
+- __Objective in life:__ Make the world a better place, contribute to a more sustainable and fair society
