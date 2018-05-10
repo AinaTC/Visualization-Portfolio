@@ -96,7 +96,7 @@ The map is quite clear, showing areas with higher cost thicker that tracks with 
 
 # __Near-Real-Time temperature interpolation__
 
-<img src="images/Capture.jpg" width="650px">
+<img src="images/Capture.png" width="650px">
 
 
 __Shiny app:__
@@ -105,7 +105,7 @@ https://tubau001.shinyapps.io/real-time-temperature
 
 
 
-## Metadata
+## __Metadata__
 
 __Course name__ 
 
@@ -167,7 +167,7 @@ The shiny app is still very slow due to the large computation time of the interp
 ----
 
 # __Flooding Modelling__
-## Metadata
+## __Metadata__
 - __Course name :__ Modelling and geo statistics
 - __Course code:__
 - __Application of the products:__ Flood management
@@ -182,7 +182,7 @@ The shiny app is still very slow due to the large computation time of the interp
 ----
 
 # __Ground Control Points on DEM from Photogrammetry__
-## Metadata
+## __Metadata__
 
 __Course name__ 
 
