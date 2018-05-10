@@ -1,0 +1,11 @@
+---
+name: "Portfolio"
+output_dir: "."
+navbar:
+  title: "GIS Portfolio"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Metadata"
+      href: about.html
+---
