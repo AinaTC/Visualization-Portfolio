@@ -1,7 +1,7 @@
 name: "Portfolio"
 output_dir: "."
 navbar:
-  title: "GIS Portfolio"
+  title: "Visualization Portfolio"
   left:
     - text: "Metadata"
       href: index.html
@@ -9,5 +9,5 @@ navbar:
       href: about.html
 output:
   html_document:
-    theme: flatly
-    css: style.css
+    theme: yeti
+    

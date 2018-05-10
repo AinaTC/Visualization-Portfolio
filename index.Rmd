@@ -1,13 +1,19 @@
 ---
-title: "GIS Portfolio"
 output:
   html_document:
     toc: true  
     toc_float: true  
 ---
+
+```{R, include = F}
+
+
+```
 # __Light Rail__
 
-![ ](./LigthRailCost.jpg)
+<img src="images/LigthRailCost.jpg" width="650px">
+
+
 
 ## Metadata
 
@@ -89,6 +95,9 @@ The map is quite clear, showing areas with higher cost thicker that tracks with 
 ----
 
 # __Near-Real-Time temperature interpolation__
+
+<img src="images/Capture.jpg" width="650px">
+
 
 __Shiny app:__
 
