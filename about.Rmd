@@ -2,7 +2,7 @@
 title: "About Me"
 ---
 
-Name: Aina Tubau Comas
+
 - __Name:__ Aina Tubau Comas
 - __Ocupation:__ Geo-Information Sciences student at Wageningen University
 - __Background:__ Bachelor in environmental sciences at University of Barcelona
