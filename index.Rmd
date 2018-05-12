@@ -53,7 +53,7 @@ __Dataset(s) used__
  
  + Buildings
  
- + Infraestructure
+ + Infrastructure
  
  + Water
  
@@ -72,7 +72,7 @@ __Processing method(s)__
  
  + Create suitability raster
  
- + Create cospath and corridors
+ + Create cost-path and corridors
  
  + Design in ArcGIS
  
@@ -86,9 +86,9 @@ __Tools used for implementation__
   + Model Builder 
   
 
-__Reflection on final result__
+__Reflection on result__
 
-The map is quite clear, showing areas with higher cost thicker that tracks with lower costs, and making the Ligth rail stand over a transparent background, which adds information but does not take over. with areas more expensive being thickest. Nevertheless adding labels for Most Suitable and Less suitable next to the suitabiliy lengend would make it better.3 scenarios were plotted due to uncertanies about the real cost, which price is significantly different, but better information about cost would solve the problem. The criteria used to select suitability areas is subjective, and prefered areas could differ applying different criteria. This allows to change suitability according to the user's preferences.
+The map is quite clear, showing areas with higher cost thicker that tracks with lower costs, and making the Light rail stand over a transparent background, which adds information but does not take over. with areas more expensive being thickest. Nevertheless adding labels for Most Suitable and Less suitable next to the suitability legend would make it better.3 scenarios were plotted due to uncertainties about the real cost, which price is significantly different, but better information about cost would solve the problem. The criteria used to select suitability areas is subjective, and preferred areas could differ applying different criteria. This allows to change suitability according to the user's preferences.
 
 </details>
 </div>
@@ -163,9 +163,9 @@ __Tools used__
   + leaflet
   
   
-__Reflection on final result__ 
+__Reflection on result__ 
 
-The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
+The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
 
 </details>
 </div>
@@ -199,7 +199,7 @@ Policy makers
 
 __Potential users' requirements__ 
 
-Easy to interprete
+Easy to interpret
 
 
 __Visualisation type__ 
@@ -220,7 +220,7 @@ NetLogo, Rstudio
 
 __Reflection on result__ 
 
-Result shows clearly areas safe and hazarduous, with distinct colous, but no information on the ucertanty. Such information is important for the quality of the model, but, if uncertanty is not ver big, the plot distinguishing safe and hazarduous areas can be used quite safely by policy makers without taking risks.
+Result shows clearly areas safe and hazardous, with distinct colous, but no information on the uncertainty. Such information is important for the quality of the model, but, if uncertainty is not very big, the plot distinguishing safe and hazardous areas can be used quite safely by policy makers without taking risks.
 
 </details>
 </div>
@@ -268,7 +268,7 @@ __Visualisation type__
 
 __Dataset(s):__ 
 
-  + Photographies from UAV
+  + Photographs from UAV
   
   + Ground Control Point coordinates
 
