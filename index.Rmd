@@ -95,9 +95,72 @@ The map is quite clear, showing areas with higher cost thicker that tracks with 
 
 ----
 
+
+# __Hiking and Camping Route__
+
+<img src="images/Hiking&CampingRoute.png" width="650px">
+
+<div class="well">
+<details>
+<summary> __Metadata__    </summary>
+
+__Course name__ 
+
+Advanced GIS for Earth and Environment
+
+__Course code__
+
+
+__Application of the products__ 
+
+Provide multiple-day hikking routes
+
+
+__Potential users__ 
+
+  + Tourism-related companies
+ 
+  + Hikkers 
+
+
+__Potential users' requirements__ 
+
+Easy to interpret
+
+
+__Visualisation type__ 
+
+While hikking, internet access is not an always an option, therefore, an analogic map fits the purpose best. 
+
+__Dataset(s)__ 
+
+  + DEM
+
+__Processing method(s)__ 
+
+  + DEM derivatives
+
+  + Cost Path and Suitability
+  
+  
+__Tools used__ 
+
+  + ASTER GDEM
+  
+  + ArcGIS
+
+
+__Reflection on result__ 
+
+The potential route for hikking is clear. Results could be improved if locations suitable for camping would be bigger (perhaps with a buffer), so they would be more visible. Choice of colours allow to distinguish the different classes in a logical way (red = difficult, green = easy). The path is created to follow the easier route, which wouldn't be prefered by experienced hikkers. Alternative routes based on difficulty could be added.
+
+</details>
+</div>
+
+----
 # __Near-Real-Time temperature interpolation__
 
-<img src="images/TemperatureFr.png" width="650px">
+<img src="images/Poster-a1_TEXTS_FINAL.png">
 
 
 __Shiny app:__
@@ -140,7 +203,8 @@ __Visualisation type__
 
 __Dataset(s)__ 
 
-Open Weather near real time data
+  + Open Weather near real time data
+  + GDAM Administrative boundaries
 
 
 __Processing method(s)__ 
@@ -166,61 +230,6 @@ __Tools used__
 __Reflection on result__ 
 
 The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
-
-</details>
-</div>
-
-----
-
-# __Flooding Modelling__
-
-<img src="images/Capture.png" width="650px">
-
-<div class="well">
-<details>
-<summary> __Metadata__    </summary>
-
-__Course name__ 
-
-Modelling and geo statistics
-
-__Course code__
-
-
-__Application of the products__ 
-
-Flood management
-
-
-__Potential users__ 
-
-Policy makers
-
-
-__Potential users' requirements__ 
-
-Easy to interpret
-
-
-__Visualisation type__ 
-
-
-__Dataset(s)__ 
-
-Height point data, influx distribution data
-
-__Processing method(s)__ 
-
-Kriging, MonteCarlo
-
-__Tools used__ 
-
-NetLogo, Rstudio
-
-
-__Reflection on result__ 
-
-Result shows clearly areas safe and hazardous, with distinct colous, but no information on the uncertainty. Such information is important for the quality of the model, but, if uncertainty is not very big, the plot distinguishing safe and hazardous areas can be used quite safely by policy makers without taking risks.
 
 </details>
 </div>
