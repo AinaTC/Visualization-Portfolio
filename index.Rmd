@@ -9,9 +9,11 @@ output:
 
 <img src="images/LigthRailCost.jpg" width="650px">
 
+<div class="well"> 
 
-
-## __Metadata__
+<details>
+<summary> __Metadata__    </summary> 
+                
 
 __Course name__ 
 
@@ -88,11 +90,14 @@ __Reflection on final result__
 
 The map is quite clear, showing areas with higher cost thicker that tracks with lower costs, and making the Ligth rail stand over a transparent background, which adds information but does not take over. with areas more expensive being thickest. Nevertheless adding labels for Most Suitable and Less suitable next to the suitabiliy lengend would make it better.3 scenarios were plotted due to uncertanies about the real cost, which price is significantly different, but better information about cost would solve the problem. The criteria used to select suitability areas is subjective, and prefered areas could differ applying different criteria. This allows to change suitability according to the user's preferences.
 
+</details>
+</div>
+
 ----
 
 # __Near-Real-Time temperature interpolation__
 
-<img src="images/Capture.png" width="650px">
+<img src="images/TemperatureFr.png" width="650px">
 
 
 __Shiny app:__
@@ -101,7 +106,9 @@ https://tubau001.shinyapps.io/real-time-temperature
 
 
 
-## __Metadata__
+<div class="well">
+<details>
+<summary> __Metadata__    </summary>
 
 __Course name__ 
 
@@ -160,27 +167,76 @@ __Reflection on final result__
 
 The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
 
+</details>
+</div>
+
 ----
 
 # __Flooding Modelling__
-## __Metadata__
-- __Course name :__ Modelling and geo statistics
-- __Course code:__
-- __Application of the products:__ Flood management
-- __Potential users:__ Policy makers
-- __Potential users' requirements:__ Easy to interprete
-- __Visualisation type:__ 
-- __Dataset(s):__ Height point data, influx distribution data
-- __Processing method(s):__ Kriging, MonteCarlo
-- __Tools used:__ NetLogo, Rstudio
-- __Reflection on result:__ Result shows clearly areas safe and hazarduous, with distinct colous, but no information on the ucertanty. Such information is important for the quality of the model, but, if uncertanty is not ver big, the plot distinguishing safe and hazarduous areas can be used quite safely by policy makers without taking risks.
+
+<img src="images/Capture.png" width="650px">
+
+<div class="well">
+<details>
+<summary> __Metadata__    </summary>
+
+__Course name__ 
+
+Modelling and geo statistics
+
+__Course code__
+
+
+__Application of the products__ 
+
+Flood management
+
+
+__Potential users__ 
+
+Policy makers
+
+
+__Potential users' requirements__ 
+
+Easy to interprete
+
+
+__Visualisation type__ 
+
+
+__Dataset(s)__ 
+
+Height point data, influx distribution data
+
+__Processing method(s)__ 
+
+Kriging, MonteCarlo
+
+__Tools used__ 
+
+NetLogo, Rstudio
+
+
+__Reflection on result__ 
+
+Result shows clearly areas safe and hazarduous, with distinct colous, but no information on the ucertanty. Such information is important for the quality of the model, but, if uncertanty is not ver big, the plot distinguishing safe and hazarduous areas can be used quite safely by policy makers without taking risks.
+
+</details>
+</div>
 
 ----
 
 # __Ground Control Points on DEM from Photogrammetry__
-## __Metadata__
 
 <img src="images/DEMdif.png" width="650px">
+
+
+<div class="well" >
+<details>
+<summary> __Metadata__    </summary>
+
+
 
 __Course name__ 
 
@@ -235,3 +291,5 @@ __Reflection on result__
 
 Result can be read thanks to the colour selection: Positive, negative and areas with differences close to 0 have different colours, and it can be interpreted easily thanks to the legend.
 
+</details>
+</div>

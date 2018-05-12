@@ -11,3 +11,4 @@ output:
   html_document:
     theme: yeti
     highlight: tango
+    css: style.css

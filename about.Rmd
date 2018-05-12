@@ -2,9 +2,5 @@
 title: "About Me"
 ---
 
-
-- __Name:__ Aina Tubau Comas
-- __Ocupation:__ Geo-Information Sciences student at Wageningen University
-- __Background:__ Bachelor in environmental sciences at University of Barcelona
-- __Hobbies:__ Music, gardening, dancing
-- __Objective in life:__ Make the world a better place, contribute to a more sustainable and fair society
+Hello, I am Aina. I am a student of Geo-Information Sciences at Wageningen Unversity with background in environmental sciences. I currently live in the Netherlands, but I was born and raised in Barcelona, and I also briefly worked in Portugal, and travelled around europe; Indeed, I enjoy multicultural environments, and learning about different cultures. My goal in life is to make the world a better place, both from a social and an ecologic perspectives. I am passionate about many things, so I have many hobbies. At the moment I am frequently playing music, gardening and dancing swing. All in all, I would say that I love learning, and I have the capacity to find something interesting in almost everything.
+When I work in projects, I am very detailed oriented and meticulous. I believe that presentation of the results is key on projects, because in the end, it is what many times will be seen of the project in the end.

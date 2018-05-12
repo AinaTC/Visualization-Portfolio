@@ -54,6 +54,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
 
@@ -283,8 +284,8 @@ div.tocify {
 <div id="light-rail" class="section level1">
 <h1><strong>Light Rail</strong></h1>
 <p><img src="images/LigthRailCost.jpg" width="650px"></p>
-<div id="metadata" class="section level2">
-<h2><strong>Metadata</strong></h2>
+<div class="well">
+<p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
 <p>Geo-information Tools</p>
 <p><strong>Course code</strong></p>
@@ -326,16 +327,17 @@ div.tocify {
 </ul>
 <p><strong>Reflection on final result</strong></p>
 <p>The map is quite clear, showing areas with higher cost thicker that tracks with lower costs, and making the Ligth rail stand over a transparent background, which adds information but does not take over. with areas more expensive being thickest. Nevertheless adding labels for Most Suitable and Less suitable next to the suitabiliy lengend would make it better.3 scenarios were plotted due to uncertanies about the real cost, which price is significantly different, but better information about cost would solve the problem. The criteria used to select suitability areas is subjective, and prefered areas could differ applying different criteria. This allows to change suitability according to the user’s preferences.</p>
-<hr />
+<p></details></p>
 </div>
+<hr />
 </div>
 <div id="near-real-time-temperature-interpolation" class="section level1">
 <h1><strong>Near-Real-Time temperature interpolation</strong></h1>
-<p><img src="images/Capture.PNG" width="650px"></p>
+<p><img src="images/TemperatureFr.png" width="650px"></p>
 <p><strong>Shiny app:</strong></p>
 <p><a href="https://tubau001.shinyapps.io/real-time-temperature" class="uri">https://tubau001.shinyapps.io/real-time-temperature</a></p>
-<div id="metadata-1" class="section level2">
-<h2><strong>Metadata</strong></h2>
+<div class="well">
+<p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
 <p>Advanced GIS for Earth and Environment</p>
 <p><strong>Course code</strong></p>
@@ -364,33 +366,42 @@ div.tocify {
 </ul>
 <p><strong>Reflection on final result</strong></p>
 <p>The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</p>
-<hr />
+<p></details></p>
 </div>
+<hr />
 </div>
 <div id="flooding-modelling" class="section level1">
 <h1><strong>Flooding Modelling</strong></h1>
-<div id="metadata-2" class="section level2">
-<h2><strong>Metadata</strong></h2>
-<ul>
-<li><strong>Course name :</strong> Modelling and geo statistics</li>
-<li><strong>Course code:</strong></li>
-<li><strong>Application of the products:</strong> Flood management</li>
-<li><strong>Potential users:</strong> Policy makers</li>
-<li><strong>Potential users’ requirements:</strong> Easy to interprete</li>
-<li><strong>Visualisation type:</strong></li>
-<li><strong>Dataset(s):</strong> Height point data, influx distribution data</li>
-<li><strong>Processing method(s):</strong> Kriging, MonteCarlo</li>
-<li><strong>Tools used:</strong> NetLogo, Rstudio</li>
-<li><strong>Reflection on result:</strong> Result shows clearly areas safe and hazarduous, with distinct colous, but no information on the ucertanty. Such information is important for the quality of the model, but, if uncertanty is not ver big, the plot distinguishing safe and hazarduous areas can be used quite safely by policy makers without taking risks.</li>
-</ul>
-<hr />
+<p><img src="images/Capture.PNG" width="650px"></p>
+<div class="well">
+<p><details> <summary> <strong>Metadata</strong> </summary></p>
+<p><strong>Course name</strong></p>
+<p>Modelling and geo statistics</p>
+<p><strong>Course code</strong></p>
+<p><strong>Application of the products</strong></p>
+<p>Flood management</p>
+<p><strong>Potential users</strong></p>
+<p>Policy makers</p>
+<p><strong>Potential users’ requirements</strong></p>
+<p>Easy to interprete</p>
+<p><strong>Visualisation type</strong></p>
+<p><strong>Dataset(s)</strong></p>
+<p>Height point data, influx distribution data</p>
+<p><strong>Processing method(s)</strong></p>
+<p>Kriging, MonteCarlo</p>
+<p><strong>Tools used</strong></p>
+<p>NetLogo, Rstudio</p>
+<p><strong>Reflection on result</strong></p>
+<p>Result shows clearly areas safe and hazarduous, with distinct colous, but no information on the ucertanty. Such information is important for the quality of the model, but, if uncertanty is not ver big, the plot distinguishing safe and hazarduous areas can be used quite safely by policy makers without taking risks.</p>
+<p></details></p>
 </div>
+<hr />
 </div>
 <div id="ground-control-points-on-dem-from-photogrammetry" class="section level1">
 <h1><strong>Ground Control Points on DEM from Photogrammetry</strong></h1>
-<div id="metadata-3" class="section level2">
-<h2><strong>Metadata</strong></h2>
 <p><img src="images/DEMdif.png" width="650px"></p>
+<div class="well">
+<p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
 <p>Advanced Earth Observation</p>
 <p><strong>Course code</strong></p>
@@ -421,6 +432,7 @@ div.tocify {
 </ul>
 <p><strong>Reflection on result</strong></p>
 <p>Result can be read thanks to the colour selection: Positive, negative and areas with differences close to 0 have different colours, and it can be interpreted easily thanks to the legend.</p>
+<p></details></p>
 </div>
 </div>
 
