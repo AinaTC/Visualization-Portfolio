@@ -98,7 +98,7 @@ The map is quite clear, showing areas with higher cost thicker that tracks with 
 
 # __Hiking and Camping Route__
 
-<img src="images/Hiking&CampingRoute.png" width="650px">
+<img src="images/Hiking&CampingRoute.png" width="450px">
 
 <div class="well">
 <details>
@@ -188,12 +188,13 @@ Compare interpolation methods and visualize current temperature at country level
 
 __Potential users__
 
-Anyone interested in current temperature at any country 
+  + Anyone interested in current temperature at any country 
 
+  + GIS Scientists
 
 __Potential users' requirements__ 
 
-Quickly understand the temperature from the map.
+Quickly understand the temperature from the map. Get an overview of the research done.
 
 
 __Visualisation type__
@@ -229,6 +230,7 @@ __Tools used__
   
 __Reflection on result__ 
 
+The poster has an appealing design, and provides an overview of the research, methods, results and conclusions. More information could be added to make it more complete, but it is also good to keep it simple.
 The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
 
 </details>
