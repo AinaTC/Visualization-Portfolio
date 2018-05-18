@@ -7,7 +7,7 @@ output:
 
 # __Desertification in Spain__
 
-<iframe width="40%" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
+<iframe width="100%" height="640px" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
 <div class="well"> 
 
 <details>
@@ -149,14 +149,14 @@ The potential route for hikking is clear. Results could be improved if locations
 # __Near-Real-Time temperature interpolation__
 
 <a href="https://tubau001.shinyapps.io/real-time-temperature">
-##__Shiny app:__ 
+__Shiny app:__ 
 </a>
 
 
 <img id="temp" src="images/TemperatureFr.png" width="650px">
 
 
-
+----
 
 <div class="well">
 <details>
