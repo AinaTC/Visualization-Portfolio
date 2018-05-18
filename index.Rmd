@@ -5,10 +5,9 @@ output:
     toc_float: true  
 ---
 
-# __Light Rail__
+# __Story Map__
 
-<img src="images/LigthRailCost.jpg" width="650px">
-
+<iframe width="100%" height="800px" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
 <div class="well"> 
 
 <details>
@@ -160,12 +159,12 @@ The potential route for hikking is clear. Results could be improved if locations
 ----
 # __Near-Real-Time temperature interpolation__
 
-<img src="images/Poster-a1_TEXTS_FINAL.png">
 
-
-__Shiny app:__
+##__Shiny app:__
 
 https://tubau001.shinyapps.io/real-time-temperature
+<a href="https://tubau001.shinyapps.io/real-time-temperature">
+<img id="temp" src="images/TemperatureFr.png" width="650px">
 
 
 
@@ -190,7 +189,9 @@ __Potential users__
 
   + Anyone interested in current temperature at any country 
 
-  + GIS Scientists
+  + GIS Students and Scientists
+  
+  + Meteorological agencies
 
 __Potential users' requirements__ 
 
@@ -199,12 +200,13 @@ Quickly understand the temperature from the map. Get an overview of the research
 
 __Visualisation type__
 
-2D reference map allows to show temperature data, colours chosen are related to temperature (blue=cold, red=warm).
+An interactive website was build because it allows the user to look not only at near-real time data, but also to select the country in which temperature should be visualized. A 2D reference map shows the temperature data, with colours that are related to temperature (blue=cold, red=warm).
 
 
 __Dataset(s)__ 
 
   + Open Weather near real time data
+  
   + GDAM Administrative boundaries
 
 
@@ -214,9 +216,11 @@ __Processing method(s)__
   
   + Select data for chosen location
   
-  + interpolate
+  + Interpolate
   
-  + update data
+  + Build Shinny app
+  
+  + Update data
   
   
 __Tools used__ 
@@ -230,77 +234,78 @@ __Tools used__
   
 __Reflection on result__ 
 
-The poster has an appealing design, and provides an overview of the research, methods, results and conclusions. More information could be added to make it more complete, but it is also good to keep it simple.
 The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
 
 </details>
 </div>
 
-----
+##__Poster__
+<img src="images/Poster-a1_TEXTS_FINAL.png">
 
-# __Ground Control Points on DEM from Photogrammetry__
-
-<img src="images/DEMdif.png" width="650px">
-
-
-<div class="well" >
+<div class="well">
 <details>
+
 <summary> __Metadata__    </summary>
-
-
 
 __Course name__ 
 
-Advanced Earth Observation
+Advanced GIS for Earth and Environment
 
 
-__Course code__
+__Course code__ 
 
 
-__Application of the products__ 
+__Application of the products__
 
-Gain understanding on Photogrammetry
+Communicate about the research results on a comparision between interpolation methods for a near-real time application
 
 
-__Potential users__ 
+__Potential users__
 
-  + Photogrammetry users
+  + GIS Students and Scientists
   
-  + Remote sensing scientists
+  + Meteorological agencies
+
+__Potential users' requirements__ 
+
+Get an overview of the research done, logical structure, easy to understand and reproduce the research done.
 
 
-__Potential users' requirements:__ 
+__Visualisation type__
 
-Result easy to interpret
-
-
-__Visualisation type__ 
+A poster shows a summary of the research in a visually appealing manner. Furthermore, it is common inside the scientific community.
 
 
-__Dataset(s):__ 
+__Dataset(s)__ 
 
-  + Photographs from UAV
+  + Open Weather near real time data
   
-  + Ground Control Point coordinates
+  + GDAM Administrative boundaries
 
 
 __Processing method(s)__ 
-  
-  + Structure-from-motion photogrammetry: Point Cloud, Mesh, Texture, Export DEM
 
-  + Minus function ArcGIS to compute difference
+  + Read temperature data from API
   
+  + Select data for chosen location
+  
+  + Interpolate
+  
+  + Calculate RMSE
+  
+  +Plot results
   
 __Tools used__ 
-
-  + Agisoft Photoscan
   
-  + ArcGIS
-
-
+  + R: owm, gstat
+  
+  
 __Reflection on result__ 
 
-Result can be read thanks to the colour selection: Positive, negative and areas with differences close to 0 have different colours, and it can be interpreted easily thanks to the legend.
+The poster has an appealing design, and provides an overview of the research, methods, results and conclusions. More information could be added to make it more complete, but it is also good to keep it simple.
+
 
 </details>
 </div>
+
+----

@@ -281,9 +281,10 @@ div.tocify {
 </div>
 
 
-<div id="light-rail" class="section level1">
-<h1><strong>Light Rail</strong></h1>
-<p><img src="images/LigthRailCost.jpg" width="650px"></p>
+<div id="story-map" class="section level1">
+<h1><strong>Story Map</strong></h1>
+<iframe width="100%" height="800px" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no">
+</iframe>
 <div class="well">
 <p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
@@ -372,9 +373,9 @@ div.tocify {
 </div>
 <div id="near-real-time-temperature-interpolation" class="section level1">
 <h1><strong>Near-Real-Time temperature interpolation</strong></h1>
-<p><img src="images/Poster-a1_TEXTS_FINAL.png"></p>
-<p><strong>Shiny app:</strong></p>
-<p><a href="https://tubau001.shinyapps.io/real-time-temperature" class="uri">https://tubau001.shinyapps.io/real-time-temperature</a></p>
+<div id="shiny-app" class="section level2">
+<h2><strong>Shiny app:</strong></h2>
+<p><a href="https://tubau001.shinyapps.io/real-time-temperature" class="uri">https://tubau001.shinyapps.io/real-time-temperature</a> <a href="https://tubau001.shinyapps.io/real-time-temperature"> <img id="temp" src="images/TemperatureFr.png" width="650px"></p>
 <div class="well">
 <p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
@@ -385,23 +386,25 @@ div.tocify {
 <p><strong>Potential users</strong></p>
 <ul>
 <li><p>Anyone interested in current temperature at any country</p></li>
-<li><p>GIS Scientists</p></li>
+<li><p>GIS Students and Scientists</p></li>
+<li><p>Meteorological agencies</p></li>
 </ul>
 <p><strong>Potential users’ requirements</strong></p>
 <p>Quickly understand the temperature from the map. Get an overview of the research done.</p>
 <p><strong>Visualisation type</strong></p>
-<p>2D reference map allows to show temperature data, colours chosen are related to temperature (blue=cold, red=warm).</p>
+<p>An interactive website was build because it allows the user to look not only at near-real time data, but also to select the country in which temperature should be visualized. A 2D reference map shows the temperature data, with colours that are related to temperature (blue=cold, red=warm).</p>
 <p><strong>Dataset(s)</strong></p>
 <ul>
-<li>Open Weather near real time data</li>
-<li>GDAM Administrative boundaries</li>
+<li><p>Open Weather near real time data</p></li>
+<li><p>GDAM Administrative boundaries</p></li>
 </ul>
 <p><strong>Processing method(s)</strong></p>
 <ul>
 <li><p>Read temperature data from API</p></li>
 <li><p>Select data for chosen location</p></li>
-<li><p>interpolate</p></li>
-<li><p>update data</p></li>
+<li><p>Interpolate</p></li>
+<li><p>Build Shinny app</p></li>
+<li><p>Update data</p></li>
 </ul>
 <p><strong>Tools used</strong></p>
 <ul>
@@ -410,47 +413,52 @@ div.tocify {
 <li><p>leaflet</p></li>
 </ul>
 <p><strong>Reflection on result</strong></p>
-<p>The poster has an appealing design, and provides an overview of the research, methods, results and conclusions. More information could be added to make it more complete, but it is also good to keep it simple. The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</p>
+<p>The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</p>
 <p></details></p>
 </div>
-<hr />
 </div>
-<div id="ground-control-points-on-dem-from-photogrammetry" class="section level1">
-<h1><strong>Ground Control Points on DEM from Photogrammetry</strong></h1>
-<p><img src="images/DEMdif.png" width="650px"></p>
+<div id="poster" class="section level2">
+<h2><strong>Poster</strong></h2>
+<p><img src="images/Poster-a1_TEXTS_FINAL.png"></p>
 <div class="well">
-<p><details> <summary> <strong>Metadata</strong> </summary></p>
+<p><details></p>
+<p><summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
-<p>Advanced Earth Observation</p>
+<p>Advanced GIS for Earth and Environment</p>
 <p><strong>Course code</strong></p>
 <p><strong>Application of the products</strong></p>
-<p>Gain understanding on Photogrammetry</p>
+<p>Communicate about the research results on a comparision between interpolation methods for a near-real time application</p>
 <p><strong>Potential users</strong></p>
 <ul>
-<li><p>Photogrammetry users</p></li>
-<li><p>Remote sensing scientists</p></li>
+<li><p>GIS Students and Scientists</p></li>
+<li><p>Meteorological agencies</p></li>
 </ul>
-<p><strong>Potential users’ requirements:</strong></p>
-<p>Result easy to interpret</p>
+<p><strong>Potential users’ requirements</strong></p>
+<p>Get an overview of the research done, logical structure, easy to understand and reproduce the research done.</p>
 <p><strong>Visualisation type</strong></p>
-<p><strong>Dataset(s):</strong></p>
+<p>A poster shows a summary of the research in a visually appealing manner. Furthermore, it is common inside the scientific community.</p>
+<p><strong>Dataset(s)</strong></p>
 <ul>
-<li><p>Photographs from UAV</p></li>
-<li><p>Ground Control Point coordinates</p></li>
+<li><p>Open Weather near real time data</p></li>
+<li><p>GDAM Administrative boundaries</p></li>
 </ul>
 <p><strong>Processing method(s)</strong></p>
 <ul>
-<li><p>Structure-from-motion photogrammetry: Point Cloud, Mesh, Texture, Export DEM</p></li>
-<li><p>Minus function ArcGIS to compute difference</p></li>
+<li><p>Read temperature data from API</p></li>
+<li><p>Select data for chosen location</p></li>
+<li><p>Interpolate</p></li>
+<li><p>Calculate RMSE</p></li>
 </ul>
+<p>+Plot results</p>
 <p><strong>Tools used</strong></p>
 <ul>
-<li><p>Agisoft Photoscan</p></li>
-<li><p>ArcGIS</p></li>
+<li>R: owm, gstat</li>
 </ul>
 <p><strong>Reflection on result</strong></p>
-<p>Result can be read thanks to the colour selection: Positive, negative and areas with differences close to 0 have different colours, and it can be interpreted easily thanks to the legend.</p>
+<p>The poster has an appealing design, and provides an overview of the research, methods, results and conclusions. More information could be added to make it more complete, but it is also good to keep it simple.</p>
 <p></details></p>
+</div>
+<hr />
 </div>
 </div>
 
