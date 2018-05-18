@@ -1,0 +1,5 @@
+
+<a href="https://tubau001.shinyapps.io/real-time-temperature">
+<img id="temp" src="images/TemperatureFr.png" width="650px"></a>
+
+My favourite visualization is the Shinny app because it is an interactive format. I enjoied building the app, and thinking about the best way to make it interactive, simple and nice. I am aware that it still needs a lot of improvements, but the basis are there: allow the user to change country and to see differences between interpolation methods. Furthermore, the visualization of the results in the map using leaflet is nice, and the small explanation is hopefully usefull to make it easier to use for any user.

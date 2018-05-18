@@ -5,9 +5,9 @@ output:
     toc_float: true  
 ---
 
-# __Story Map__
+# __Desertification in Spain__
 
-<iframe width="100%" height="800px" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
+<iframe width="100%" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
 <div class="well"> 
 
 <details>
@@ -16,78 +16,67 @@ output:
 
 __Course name__ 
 
-Geo-information Tools
+Geo-information Siences in context
 
 
 __Course code__ 
 
-GRS-20806
+GRS-
 
 
 __Application of the products__ 
 
-Compute route for a Light Rail and it's costs.
+Present the problem of desertification in South-Spain.
 
 
 __Potential users__ 
 
- + Companies
- 
  + Local governments
+ 
+ + Educative community
+ 
+ + Environmentalist associations
  
 
 __Potential users' requirements__ 
 
-Numbers and maps easy to understand.
+Clarity in explanations, visually appealing.
 
 
 __Motivation for choice of visualisation type__ 
 
-Thematic map of the spatial cost of a Rail. It is easy to read, and can add written text providing extra information, like the total costs.
-
+A story map allows to integrate explanation with maps. Furthemore, ArcGIS Online provides very handy tools like the slider, which can be easily incorporated in the story map.
 
 __Dataset(s) used__  
 
- + DEM
+ + Agricultural areas in Andalusia
  
- + Buildings
+ + Location, type and images of farms
+
+ + Location and evolution (in water level) of dams in Andalusia
  
- + Infrastructure
+ + RGB images from 1991 and 2000
  
- + Water
- 
- + Census
- 
- + Landcover
- 
+
 
 __Processing method(s)__
 
- + Join and relate tables
+ + Create points with location of farms and dams, and  give attributes, including linking the images or grapth
  
- + Vector and grid buffers
+ + Create slider
  
- + Generalization of geometry
- 
- + Create suitability raster
- 
- + Create cost-path and corridors
- 
- + Design in ArcGIS
- 
- + Compute costs
- 
+ + Join in a story map
 
 __Tools used for implementation__ 
 
   + ArcGIS
   
-  + Model Builder 
+  + ArcGIS Online
   
 
 __Reflection on result__
 
-The map is quite clear, showing areas with higher cost thicker that tracks with lower costs, and making the Light rail stand over a transparent background, which adds information but does not take over. with areas more expensive being thickest. Nevertheless adding labels for Most Suitable and Less suitable next to the suitability legend would make it better.3 scenarios were plotted due to uncertainties about the real cost, which price is significantly different, but better information about cost would solve the problem. The criteria used to select suitability areas is subjective, and preferred areas could differ applying different criteria. This allows to change suitability according to the user's preferences.
+The story map is visually appealing thanks to the choice of colour, images and text. The lenght of the text is adequate, and the addition of the introductory video makes the problem more understandable. The maps could be much better, but the time limitation of the project made it very difficult. All in all, I believe the story map shows the potential of a story map.
 
 </details>
 </div>
@@ -162,9 +151,8 @@ The potential route for hikking is clear. Results could be improved if locations
 
 ##__Shiny app:__
 
-https://tubau001.shinyapps.io/real-time-temperature
 <a href="https://tubau001.shinyapps.io/real-time-temperature">
-<img id="temp" src="images/TemperatureFr.png" width="650px">
+<img id="temp" src="images/TemperatureFr.png" width="650px"></a>
 
 
 

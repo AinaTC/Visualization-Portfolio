@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "About me"
       href: about.html
+    - text: "Favourite"
+      href: fav.html
 output:
   html_document:
     theme: yeti
