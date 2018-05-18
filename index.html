@@ -286,7 +286,7 @@ div.tocify {
 
 <div id="desertification-in-spain" class="section level1">
 <h1><strong>Desertification in Spain</strong></h1>
-<iframe width="100%" height="640px" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no">
+<iframe width="640px" height="480px" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no">
 </iframe>
 <div class="well">
 <p><details> <summary> <strong>Metadata</strong> </summary></p>
@@ -367,22 +367,18 @@ div.tocify {
 <p>The potential route for hikking is clear. Results could be improved if locations suitable for camping would be bigger (perhaps with a buffer), so they would be more visible. Choice of colours allow to distinguish the different classes in a logical way (red = difficult, green = easy). The path is created to follow the easier route, which wouldn’t be prefered by experienced hikkers. Alternative routes based on difficulty could be added.</p>
 <p></details></p>
 </div>
-<table style="width:6%;">
-<colgroup>
-<col width="5%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td># <strong>Near-Real-Time temperature interpolation</strong></td>
-</tr>
-<tr class="even">
-<td><a href="https://tubau001.shinyapps.io/real-time-temperature"> <strong>Shiny app:</strong> </a></td>
-</tr>
-<tr class="odd">
-<td><img id="temp" src="images/TemperatureFr.png" width="650px"></td>
-</tr>
-</tbody>
-</table>
+<hr />
+</div>
+<div id="near-real-time-temperature-interpolation" class="section level1">
+<h1><strong>Near-Real-Time temperature interpolation</strong></h1>
+<a href="https://tubau001.shinyapps.io/real-time-temperature">
+<div id="shinny-app" class="section level2">
+<h2>
+<strong>Shinny app</strong>
+</h2>
+<p></a></p>
+<p><img id="temp" src="images/TemperatureFr.png" width="650px"></p>
+<hr />
 <div class="well">
 <p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
@@ -423,6 +419,7 @@ div.tocify {
 <p>The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</p>
 <p></details></p>
 </div>
+<hr />
 <div id="poster" class="section level2">
 <h2><strong>Poster</strong></h2>
 <p><img src="images/Poster-a1_TEXTS_FINAL.png"></p>
