@@ -121,6 +121,14 @@
         width: 100%;
     }
 }
-
-html{font-size:110%;} 
-@media(min-width:60em){html{font-size: 90%}}
+@media (min-width: 768)
+{
+       body
+       {
+           font-size: 10px; 
+       }
+       h1
+       {
+           font-size:14px;
+       }
+}
