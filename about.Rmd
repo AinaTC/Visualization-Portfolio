@@ -2,6 +2,8 @@
 title: "Welcome"
 ---
 
+<img id="aboutme" src="images/aboutme.jpg">
+
 My name is Aina and I am a student of Geo-Information Sciences at Wageningen University with background in environmental sciences. 
 
 - I am fond of programming and open source technologies
