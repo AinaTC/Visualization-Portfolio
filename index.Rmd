@@ -5,10 +5,10 @@ output:
     toc_float: true  
 ---
 
-<div>
-# __Desertification in Spain__
 
-<iframe width="640" height="480" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
+# __Desertification in Spain__
+<div class="intrinsic-container intrinsic-container-16x9">
+<iframe  src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
 <a href="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" target="_blank">View Larger Story Map</a>
 </div>
 
