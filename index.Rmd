@@ -5,10 +5,12 @@ output:
     toc_float: true  
 ---
 
+<div>
 # __Desertification in Spain__
 
-<iframe width="640px" height="480px" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
+<iframe width="640" height="480" src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
 <a href="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" target="_blank">View Larger Story Map</a>
+</div>
 
 <div class="well"> 
 
@@ -88,7 +90,7 @@ The story map is visually appealing thanks to the choice of colour, images and t
 
 # __Hiking and Camping Route__
 
-<img src="images/Hiking&CampingRoute.png" width="450px">
+<img src="images/Hiking&CampingRoute.png" width="450">
 
 <div class="well">
 <details>
@@ -164,7 +166,7 @@ The potential route for hikking is clear. Results could be improved if locations
 
 
 
-<img id="temp" src="images/TemperatureFr.PNG" width="650px">
+<img id="temp" src="images/TemperatureFr.PNG" width="650">
 
 
 
