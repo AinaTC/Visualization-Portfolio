@@ -164,7 +164,7 @@ The potential route for hikking is clear. Results could be improved if locations
 
 
 
-<img id="temp" src="images/TemperatureFr.png" width="650px">
+<img id="temp" src="images/TemperatureFr.PNG" width="650px">
 
 
 
