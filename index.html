@@ -328,7 +328,7 @@ div.tocify {
 <li><p>ArcGIS Online</p></li>
 </ul>
 <p><strong>Reflection on result</strong></p>
-<p>The story map is visually appealing thanks to the choice of colour, images and text. The lenght of the text is adequate, and the addition of the introductory video makes the problem more understandable. The maps could be much better, but the time limitation of the project made it very difficult. All in all, I believe the story map shows the potential of a story map.</p>
+<p>The story map is visually appealing thanks to the choice of colour, images and text. The lenght of the text is adequate, and the addition of the introductory video makes the problem more understandable. The maps could be much better, but the time limitation of the project made it very difficult. All in all, I believe the story map presented above shows the potential of a story map.</p>
 <p></details></p>
 </div>
 <hr />
@@ -381,7 +381,7 @@ span.onclick = function() {
 <p><strong>Potential users’ requirements</strong></p>
 <p>Easy to interpret</p>
 <p><strong>Visualisation type</strong></p>
-<p>While hikking, internet access is not an always an option, therefore, an analogic map fits the purpose best.</p>
+<p>While hikking, internet access is not an always an option, therefore, an analogic map fits the purpose best. Furthermore, the analogical map is the classic way of presenting results, and therefore, it is easier to understand by any users, including those that are not so familiar with new technologies</p>
 <p><strong>Dataset(s)</strong></p>
 <ul>
 <li>DEM</li>
@@ -389,7 +389,8 @@ span.onclick = function() {
 <p><strong>Processing method(s)</strong></p>
 <ul>
 <li><p>DEM derivatives</p></li>
-<li><p>Cost Path and Suitability</p></li>
+<li><p>Suitability analysis</p></li>
+<li><p>Cost Path</p></li>
 </ul>
 <p><strong>Tools used</strong></p>
 <ul>
@@ -428,7 +429,7 @@ span.onclick = function() {
 <p><strong>Potential users’ requirements</strong></p>
 <p>Quickly understand the temperature from the map. Get an overview of the research done.</p>
 <p><strong>Visualisation type</strong></p>
-<p>An interactive website was build because it allows the user to look not only at near-real time data, but also to select the country in which temperature should be visualized. A 2D reference map shows the temperature data, with colours that are related to temperature (blue=cold, red=warm).</p>
+<p>An interactive website was build because this format allows the user to look not only at near-real time data, but also to select the country in which temperature should be visualized, and compare interpolation methods.</p>
 <p><strong>Dataset(s)</strong></p>
 <ul>
 <li><p>Open Weather near real time data</p></li>
@@ -444,12 +445,12 @@ span.onclick = function() {
 </ul>
 <p><strong>Tools used</strong></p>
 <ul>
-<li><p>R: owm, gstat</p></li>
+<li><p>R: owmr, gstat, raster, sp</p></li>
 <li><p>shinny app</p></li>
 <li><p>leaflet</p></li>
 </ul>
 <p><strong>Reflection on result</strong></p>
-<p>The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.</p>
+<p>The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button to click when user wants to apply a change, and the countries are searched by code. It would be more user friendly for the user to be able to write the country name instead. All in all, an interactive app allows to show contect according to the user’s wishes, making it more personal.</p>
 <p></details></p>
 </div>
 <hr />
@@ -499,7 +500,7 @@ span.onclick = function() {
 <li><p>Meteorological agencies</p></li>
 </ul>
 <p><strong>Potential users’ requirements</strong></p>
-<p>Get an overview of the research done, logical structure, easy to understand and reproduce the research done.</p>
+<p>The research done should be easy to understand and reproduce, and should be explained following a logical structure.</p>
 <p><strong>Visualisation type</strong></p>
 <p>A poster shows a summary of the research in a visually appealing manner. Furthermore, it is common inside the scientific community.</p>
 <p><strong>Dataset(s)</strong></p>
@@ -513,14 +514,14 @@ span.onclick = function() {
 <li><p>Select data for chosen location</p></li>
 <li><p>Interpolate</p></li>
 <li><p>Calculate RMSE</p></li>
+<li><p>Plot results</p></li>
 </ul>
-<p>+Plot results</p>
 <p><strong>Tools used</strong></p>
 <ul>
-<li>R: owm, gstat</li>
+<li>R: owmr, gstat, sp, raster</li>
 </ul>
 <p><strong>Reflection on result</strong></p>
-<p>The poster has an appealing design, and provides an overview of the research, methods, results and conclusions. More information could be added to make it more complete, but it is also good to keep it simple.</p>
+<p>The poster has an appealing design and provides an overview of the research, methods, results and conclusions. The font size is apporopiat, as it is big enough for it to be read from distance. More information could be added to make it more complete, but it is also good to keep it simple.</p>
 <p></details></p>
 </div>
 <hr />

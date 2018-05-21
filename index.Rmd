@@ -83,7 +83,7 @@ __Tools used for implementation__
 
 __Reflection on result__
 
-The story map is visually appealing thanks to the choice of colour, images and text. The lenght of the text is adequate, and the addition of the introductory video makes the problem more understandable. The maps could be much better, but the time limitation of the project made it very difficult. All in all, I believe the story map shows the potential of a story map.
+The story map is visually appealing thanks to the choice of colour, images and text. The lenght of the text is adequate, and the addition of the introductory video makes the problem more understandable. The maps could be much better, but the time limitation of the project made it very difficult. All in all, I believe the story map presented above shows the potential of a story map.
 
 </details>
 </div>
@@ -157,7 +157,7 @@ Easy to interpret
 
 __Visualisation type__ 
 
-While hikking, internet access is not an always an option, therefore, an analogic map fits the purpose best. 
+While hikking, internet access is not an always an option, therefore, an analogic map fits the purpose best.  Furthermore, the analogical map is the classic way of presenting results, and therefore, it is easier to understand by any users, including those that are not so familiar with new technologies
 
 __Dataset(s)__ 
 
@@ -167,7 +167,9 @@ __Processing method(s)__
 
   + DEM derivatives
 
-  + Cost Path and Suitability
+  + Suitability analysis
+  
+  + Cost Path
   
   
 __Tools used__ 
@@ -239,7 +241,7 @@ Quickly understand the temperature from the map. Get an overview of the research
 
 __Visualisation type__
 
-An interactive website was build because it allows the user to look not only at near-real time data, but also to select the country in which temperature should be visualized. A 2D reference map shows the temperature data, with colours that are related to temperature (blue=cold, red=warm).
+An interactive website was build because this format allows the user to look not only at near-real time data, but also to select the country in which temperature should be visualized, and compare interpolation methods.
 
 
 __Dataset(s)__ 
@@ -264,7 +266,7 @@ __Processing method(s)__
   
 __Tools used__ 
   
-  + R: owm, gstat
+  + R: owmr, gstat, raster, sp
   
   + shinny app
   
@@ -273,7 +275,7 @@ __Tools used__
   
 __Reflection on result__ 
 
-The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button, to click when user wants to apply a change, and the countries are searched by code, it would be more user friendly for the user to be able to write the country name instead.
+The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button to click when user wants to apply a change, and the countries are searched by code. It would be more user friendly for the user to be able to write the country name instead. All in all, an interactive app allows to show contect according to the user's wishes, making it more personal.
 
 </details>
 </div>
@@ -341,7 +343,7 @@ __Potential users__
 
 __Potential users' requirements__ 
 
-Get an overview of the research done, logical structure, easy to understand and reproduce the research done.
+The research done should be easy to understand and reproduce, and should be explained following a logical structure.
 
 
 __Visualisation type__
@@ -366,16 +368,16 @@ __Processing method(s)__
   
   + Calculate RMSE
   
-  +Plot results
+  + Plot results
   
 __Tools used__ 
   
-  + R: owm, gstat
+  + R: owmr, gstat, sp, raster
   
   
 __Reflection on result__ 
 
-The poster has an appealing design, and provides an overview of the research, methods, results and conclusions. More information could be added to make it more complete, but it is also good to keep it simple.
+The poster has an appealing design and provides an overview of the research, methods, results and conclusions. The font size is apporopiat, as it is big enough for it to be read from distance. More information could be added to make it more complete, but it is also good to keep it simple.
 
 
 </details>
