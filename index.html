@@ -294,9 +294,9 @@ div.tocify {
 <div class="well">
 <p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
-<p>Geo-information Siences in context</p>
+<p>Geo-information Science in Context</p>
 <p><strong>Course code</strong></p>
-<p>GRS-</p>
+<p>GRS-34306</p>
 <p><strong>Application of the products</strong></p>
 <p>Present the problem of desertification in South-Spain.</p>
 <p><strong>Potential users</strong></p>
@@ -335,12 +335,42 @@ div.tocify {
 </div>
 <div id="hiking-and-camping-route" class="section level1">
 <h1><strong>Hiking and Camping Route</strong></h1>
-<p><img src="images/Hiking&CampingRoute.png" width="450"></p>
+<p><img id="Img1" class="img" alt="" src="images/Hiking&CampingRoute.png"
+width="450"></p>
+<div id="myModal" class="modal">
+<span class="close">×</span> <img class="modal-content" id="img01">
+<div id="caption">
+
+</div>
+</div>
+<script type="text/javascript">
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('Img1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 <div class="well">
 <p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
-<p>Advanced GIS for Earth and Environment</p>
+<p>Advanced Geo-information Science for Earth and Environment</p>
 <p><strong>Course code</strong></p>
+<p>GRS-33306</p>
 <p><strong>Application of the products</strong></p>
 <p>Provide multiple-day hikking routes</p>
 <p><strong>Potential users</strong></p>
@@ -384,8 +414,9 @@ div.tocify {
 <div class="well">
 <p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
-<p>Advanced GIS for Earth and Environment</p>
+<p>Advanced Geo-information Science for Earth and Environment</p>
 <p><strong>Course code</strong></p>
+<p>GRS-33306</p>
 <p><strong>Application of the products</strong></p>
 <p>Compare interpolation methods and visualize current temperature at country level</p>
 <p><strong>Potential users</strong></p>
@@ -457,8 +488,9 @@ span.onclick = function() {
 <p><details></p>
 <p><summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
-<p>Advanced GIS for Earth and Environment</p>
+<p>Advanced Geo-information Science for Earth and Environment</p>
 <p><strong>Course code</strong></p>
+<p>GRS-33306</p>
 <p><strong>Application of the products</strong></p>
 <p>Communicate about the research results on a comparision between interpolation methods for a near-real time application</p>
 <p><strong>Potential users</strong></p>
