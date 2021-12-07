@@ -59,6 +59,13 @@
 
 #Img1:hover {opacity: 0.7;}
 
+#Img0 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Img0:hover {opacity: 0.7;}
 
 
 #myImg {

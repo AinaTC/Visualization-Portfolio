@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -23,6 +23,15 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -54,11 +63,10 @@ h6 {
 }
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -72,13 +80,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -94,7 +107,6 @@ body {
   padding-top: 50px;
   margin-top: -50px;
 }
-
 .section h2 {
   padding-top: 50px;
   margin-top: -50px;
@@ -114,6 +126,43 @@ body {
 .section h6 {
   padding-top: 50px;
   margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -135,47 +184,66 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -189,6 +257,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -224,8 +298,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -234,6 +306,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -265,9 +347,6 @@ div.tocify {
 <li>
   <a href="about.html">About me</a>
 </li>
-<li>
-  <a href="fav.html">Favourite</a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -284,51 +363,70 @@ div.tocify {
 </div>
 
 
-<div id="desertification-in-spain" class="section level1">
-<h1><strong>Desertification in Spain</strong></h1>
-<div class="intrinsic-container intrinsic-container-16x9">
-<iframe src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no">
-</iframe>
+<div id="lightrail-costs-and-suitability" class="section level1">
+<h1><strong>Lightrail costs and suitability</strong></h1>
+<p><img id="Img0" class="img" alt="" src="images/LigthRailCost.jpg"
+width="450"></p>
+<div id="myModal" class="modal">
+<span class="close">×</span> <img class="modal-content" id="img01">
+<div id="caption">
+
 </div>
-<p><a href="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" target="_blank">View Larger Story Map</a></p>
+</div>
+<script type="text/javascript">
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('Img0');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 <div class="well">
 <p><details> <summary> <strong>Metadata</strong> </summary></p>
 <p><strong>Course name</strong></p>
-<p>Geo-information Science in Context</p>
-<p><strong>Course code</strong></p>
-<p>GRS-34306</p>
+<p>GIS-tools</p>
 <p><strong>Application of the products</strong></p>
-<p>Present the problem of desertification in South-Spain.</p>
+<p>Find the best route for a lightrail in a given area.</p>
 <p><strong>Potential users</strong></p>
 <ul>
-<li><p>Local governments</p></li>
-<li><p>Educative community</p></li>
-<li><p>Environmentalist associations</p></li>
+<li><p>Municipalities</p></li>
+<li><p>Consultancy companies</p></li>
 </ul>
-<p><strong>Potential users’ requirements</strong></p>
-<p>Clarity in explanations, visually appealing.</p>
-<p><strong>Motivation for choice of visualisation type</strong></p>
-<p>A story map allows to integrate explanation with maps. Furthemore, ArcGIS Online provides very handy tools like the slider, which can be easily incorporated in the story map.</p>
-<p><strong>Dataset(s) used</strong></p>
+<p><strong>Potential users' requirements</strong></p>
+<p>It must be easy to interpret and it must show the costs clearly.</p>
+<p><strong>Visualisation type</strong></p>
+<p>The analogical map is the classic way of presenting results, and therefore, it is easier to understand by any users, and it is the technology municipalities are used to work with.</p>
+<p><strong>Dataset(s)</strong></p>
 <ul>
-<li><p>Agricultural areas in Andalusia</p></li>
-<li><p>Location, type and images of farms</p></li>
-<li><p>Location and evolution (in water level) of dams in Andalusia</p></li>
-<li><p>RGB images from 2006 and 2017</p></li>
+<li><p>DEM</p></li>
+<li><p>Cadaster data</p></li>
 </ul>
 <p><strong>Processing method(s)</strong></p>
 <ul>
-<li><p>Create points with location of farms and dams, and give attributes, including linking the images or grapth</p></li>
-<li><p>Create slider</p></li>
-<li><p>Join in a story map</p></li>
+<li><p>Suitability analysis</p></li>
+<li><p>Cost Path</p></li>
 </ul>
-<p><strong>Tools used for implementation</strong></p>
+<p><strong>Tools used</strong></p>
 <ul>
 <li><p>ArcGIS</p></li>
-<li><p>ArcGIS Online</p></li>
+<li><p>ArcGIS models</p></li>
 </ul>
 <p><strong>Reflection on result</strong></p>
-<p>The story map is visually appealing thanks to the choice of colour, images and text. The lenght of the text is adequate, and the addition of the introductory video makes the problem more understandable. The maps could be much better, but the time limitation of the project made it very difficult. All in all, I believe the story map presented above shows the potential of a story map.</p>
+<p>The potential route for the lightrail is clear. Results could be improved if the background map would be less transparent. Choice of colours allow to distinguish the different suitabilities in a logical way (red = less suitable, green = more suitable). The path is created to follow the cheapest rute, and it shows the cost/m2 with its thickness (the thicker the line the more expensive is it ti build).</p>
 <p></details></p>
 </div>
 <hr />
@@ -378,7 +476,7 @@ span.onclick = function() {
 <li><p>Tourism-related companies</p></li>
 <li><p>Hikkers</p></li>
 </ul>
-<p><strong>Potential users’ requirements</strong></p>
+<p><strong>Potential users' requirements</strong></p>
 <p>Easy to interpret</p>
 <p><strong>Visualisation type</strong></p>
 <p>While hikking, internet access is not an always an option, therefore, an analogic map fits the purpose best. Furthermore, the analogical map is the classic way of presenting results, and therefore, it is easier to understand by any users, including those that are not so familiar with new technologies</p>
@@ -398,7 +496,7 @@ span.onclick = function() {
 <li><p>ArcGIS</p></li>
 </ul>
 <p><strong>Reflection on result</strong></p>
-<p>The potential route for hikking is clear. Results could be improved if locations suitable for camping would be bigger (perhaps with a buffer), so they would be more visible. Choice of colours allow to distinguish the different classes in a logical way (red = difficult, green = easy). The path is created to follow the easier route, which wouldn’t be prefered by experienced hikkers. Alternative routes based on difficulty could be added.</p>
+<p>The potential route for hikking is clear. Results could be improved if locations suitable for camping would be bigger (perhaps with a buffer), so they would be more visible. Choice of colours allow to distinguish the different classes in a logical way (red = difficult, green = easy). The path is created to follow the easier route, which wouldn't be prefered by experienced hikkers. Alternative routes based on difficulty could be added.</p>
 <p></details></p>
 </div>
 <hr />
@@ -426,7 +524,7 @@ span.onclick = function() {
 <li><p>GIS Students and Scientists</p></li>
 <li><p>Meteorological agencies</p></li>
 </ul>
-<p><strong>Potential users’ requirements</strong></p>
+<p><strong>Potential users' requirements</strong></p>
 <p>Quickly understand the temperature from the map. Get an overview of the research done.</p>
 <p><strong>Visualisation type</strong></p>
 <p>An interactive website was build because this format allows the user to look not only at near-real time data, but also to select the country in which temperature should be visualized, and compare interpolation methods.</p>
@@ -450,7 +548,7 @@ span.onclick = function() {
 <li><p>leaflet</p></li>
 </ul>
 <p><strong>Reflection on result</strong></p>
-<p>The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button to click when user wants to apply a change, and the countries are searched by code. It would be more user friendly for the user to be able to write the country name instead. All in all, an interactive app allows to show contect according to the user’s wishes, making it more personal.</p>
+<p>The shiny app is still very slow due to the large computation time of the interpolation, especially when kriging is selected. Nevertheless, it does its function: it shows temperature near real time (15-30 min difference with real time). The selection of method and country is user friendly, nevertheless, it could still be improved, as there is no action button to click when user wants to apply a change, and the countries are searched by code. It would be more user friendly for the user to be able to write the country name instead. All in all, an interactive app allows to show contect according to the user's wishes, making it more personal.</p>
 <p></details></p>
 </div>
 <hr />
@@ -499,7 +597,7 @@ span.onclick = function() {
 <li><p>GIS Students and Scientists</p></li>
 <li><p>Meteorological agencies</p></li>
 </ul>
-<p><strong>Potential users’ requirements</strong></p>
+<p><strong>Potential users' requirements</strong></p>
 <p>The research done should be easy to understand and reproduce, and should be explained following a logical structure.</p>
 <p><strong>Visualisation type</strong></p>
 <p>A poster shows a summary of the research in a visually appealing manner. Furthermore, it is common inside the scientific community.</p>
@@ -539,13 +637,56 @@ span.onclick = function() {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

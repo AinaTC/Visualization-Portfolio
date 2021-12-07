@@ -4,7 +4,7 @@ title: "Welcome"
 
 <img id="aboutme" src="images/aboutme.jpg">
 
-My name is Aina and I am a student of Geo-Information Sciences at Wageningen University with background in environmental sciences. 
+My name is Aina and I am an environmental scientist specialized in Geo-Information Sciences.
 
 - I am fond of programming and open source technologies
 
@@ -19,5 +19,5 @@ Have a spatial day!
 
 
 
-__contact:__ aina.tubaucomas@wur.nl
+__contact:__ ainatubaucomas@gmail.com
 

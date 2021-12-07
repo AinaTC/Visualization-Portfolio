@@ -1,2 +1,3 @@
-setwd ("C:/Users/Aina/personal_site/VisualizationPortfolio")
+# setwd("~/Visualization-Portfolio")
 rmarkdown::render_site()
+

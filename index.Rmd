@@ -5,92 +5,96 @@ output:
     toc_float: true  
 ---
 
+# __Lightrail costs and suitability__
+<img id="Img0" class="img" alt="" src="images/LigthRailCost.jpg"
+width="450">
 
-# __Desertification in Spain__
-<div class="intrinsic-container intrinsic-container-16x9">
-<iframe  src="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" frameborder="0" scrolling="no"></iframe>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
 
-<a href="https://wur-girs.maps.arcgis.com/apps/MapSeries/index.html?appid=c6988a80d2d444559d07c64a180ecb6c" target="_blank">View Larger Story Map</a>
+```{js, echo=FALSE}
+// Get the modal
+var modal = document.getElementById('myModal');
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('Img0');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
 
-<div class="well"> 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+```
+
+<div class="well">
 <details>
-<summary> __Metadata__    </summary> 
-                
+<summary> __Metadata__    </summary>
 
 __Course name__ 
 
-Geo-information Science in Context
-
-
-__Course code__ 
-
-
-GRS-34306
+GIS-tools
 
 
 __Application of the products__ 
 
-Present the problem of desertification in South-Spain.
-
+Find the best route for a lightrail in a given area.
 
 __Potential users__ 
 
- + Local governments
+  + Municipalities
  
- + Educative community
- 
- + Environmentalist associations
- 
+  + Consultancy companies
+
 
 __Potential users' requirements__ 
 
-Clarity in explanations, visually appealing.
+It must be easy to interpret and it must show the costs clearly.
 
+__Visualisation type__ 
 
-__Motivation for choice of visualisation type__ 
+The analogical map is the classic way of presenting results, and therefore, it is easier to understand by any users, and it is the technology municipalities are used to work with.
 
-A story map allows to integrate explanation with maps. Furthemore, ArcGIS Online provides very handy tools like the slider, which can be easily incorporated in the story map.
+__Dataset(s)__ 
 
-__Dataset(s) used__  
+  + DEM
 
- + Agricultural areas in Andalusia
- 
- + Location, type and images of farms
+  + Cadaster data
+  
 
- + Location and evolution (in water level) of dams in Andalusia
- 
- + RGB images from 2006 and 2017
- 
+__Processing method(s)__ 
 
-
-__Processing method(s)__
-
- + Create points with location of farms and dams, and  give attributes, including linking the images or grapth
- 
- + Create slider
- 
- + Join in a story map
-
-__Tools used for implementation__ 
+  + Suitability analysis
+  
+  + Cost Path
+  
+  
+__Tools used__ 
 
   + ArcGIS
-  
-  + ArcGIS Online
-  
 
-__Reflection on result__
+  + ArcGIS models
 
-The story map is visually appealing thanks to the choice of colour, images and text. The lenght of the text is adequate, and the addition of the introductory video makes the problem more understandable. The maps could be much better, but the time limitation of the project made it very difficult. All in all, I believe the story map presented above shows the potential of a story map.
+
+__Reflection on result__ 
+
+The potential route for the lightrail is clear. Results could be improved if the background map would be less transparent. Choice of colours allow to distinguish the different suitabilities in a logical way (red = less suitable, green = more suitable). The path is created to follow the cheapest rute, and it shows the cost/m2 with its thickness (the thicker the line the more expensive is it ti build).
 
 </details>
 </div>
-
 ----
-
-
 # __Hiking and Camping Route__
 
 <img id="Img1" class="img" alt="" src="images/Hiking&CampingRoute.png"
